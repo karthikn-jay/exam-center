@@ -21,4 +21,9 @@ public class LoginController {
 		model.addAttribute("username", username);
 		return "common/home";
 	}
+	
+	@RequestMapping("/logout")
+	public String logout() {
+		return "common/login";
+	}
 }
